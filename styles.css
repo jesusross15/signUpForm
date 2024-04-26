@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
 
-
-* {
+body{ 
+    font-family: helvetica;
     margin: 0;
     padding: 0;
 }
 
-body{ 
-    font-family: helvetica;
-}
-
 .container {
-
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
+/* Sidebar Styling */
 .side-hero {
-    background-image: url(backgroundSignUp.jpg);;
+    background-image: url(backgroundSignUp.jpg);
+    height: 100%;
+    flex-grow: 1;
+    width: 40vw;
+    min-width: 345px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .background-text h1 {
@@ -23,46 +31,19 @@ body{
     color: white;
 }
 
-.photo-creds {
-    color: white;
+.background-text {
+    display: flex;
 }
 
-.middle {
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #464646;
+.photo-creds {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 
 .background-text img {
     height: 70px;
-}
-
-.main-content p {
-    font-weight: bold;
-}
-
-.background-text-transparency {
-    background-color: rgb(108, 108, 108);
-    opacity: 0.5;
-}
-
-input:invalid {
-    border-color: red;
-  }
-
-input:focus {
-    border-color: blue;
-    box-shadow: 5px 5px 5px 0px #CCCAC1;
-}
-
-button {
-    background-color: #596D48;
-    color: whitesmoke;
-}
-
-.bottom a {
-    color: #596D48;
-    text-decoration: none;
 }
 
