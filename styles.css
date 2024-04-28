@@ -76,6 +76,58 @@ body{
     font-size: 20px;
 }
 
+/* Main Middle Styling */
+.middle h1 {
+    padding-left: 50px;
+    text-transform:capitalize;
+}
+.middle {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bolder;
+    color: #464646;
+    box-shadow:  5px 5px rgba(0, 0, 0, 0.123)
+}
+
+.form-container1, .form-container2 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.form {
+    display: flex;
+    padding-left: 50px;
+    gap: 70px;
+    padding-bottom: 20px;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+}
+
+input {
+    width: 100% ;
+    box-sizing: border-box;
+    border-color:rgb(211, 211, 211);
+    border-width: 0.5px;
+    border-radius: 5px;
+    height: 25px;
+
+  }
+
+input:invalid {
+    border-color: red;
+  }
+
+input:focus {
+    border-color: blue;
+    box-shadow: 5px 5px 5px 0px #CCCAC1;
+}
 
 /* Main Bottom Styling */
 button {
