@@ -7,43 +7,106 @@ body{
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
 }
 
 /* Sidebar Styling */
 .side-hero {
     background-image: url(backgroundSignUp.jpg);
-    height: 100%;
-    flex-grow: 1;
-    width: 40vw;
+    min-height: 100%;
+    width: 70vw;
     min-width: 345px;
-    height: 100vh;
-    background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    background-size: cover;
     color: white;
 }
 
 .background-text h1 {
     font-family: "Skranji", system-ui;
     color: white;
+    font-size: 60px;
+}
+
+.background-text-transparency {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(26, 26, 26, 0.5);
 }
 
 .background-text {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .photo-creds {
-    color: white;
     display: flex;
-    flex-direction: column;
     justify-content: end;
+    align-items: end;
 }
-
 
 .background-text img {
-    height: 70px;
+    height: 100px;
 }
 
+/* Main Content Styling */
+.main-content p {
+    font-weight: bold;
+}
+
+.main-content {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr;
+}
+
+/* Main Top Styling */
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 220px 50px 50px;
+    background-color: #e3e3e3;
+    font-size: 20px;
+}
+
+
+/* Main Bottom Styling */
+button {
+    background-color: #596D48;
+    color: whitesmoke;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 3px 0px  #CCCAC1;
+    height: 40px;
+    width: 200px;
+}
+
+.bottom a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.bottom p {
+    font-weight: 500;
+}
+
+.bottom {
+    padding-left: 50px;
+    padding-top: 20px;
+    background-color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+}
+
+button:hover {
+    cursor: pointer;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -40,39 +41,45 @@
                     <h1>Let's do this!</h1>
                 </div>
 
-                <div class="form-container">
-                    <form action="" method="post">
-                        <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name" placeholder="John">
+                <div  class="form">
+                    <div class="form-container1">
+                        <form action method="post">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="John">
 
-                        <label for="last_name">Last Name</label>
-                        <input type="text" name="last_name" id="last_name" placeholder="Smith">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="tel" name="phone_number" id="phone_number" placeholder="123456789">
+                    
+                            <label for="pass_word">Password</label>
+                            <input type="password" name="pass_word" id="pass_word">
+                        </form>
+                    </div>
 
-                        <label for="e_mail">Email</label>
-                        <input type="email" name="e_mail" id="e_mail" placeholder="123@email.com">
+                    <div class="form-container2">
+                        <form action method="post">    
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Smith"> 
 
-                        <label for="phone_number">Phone Number</label>
-                        <input type="tel" name="phone_number" id="phone_number" placeholder="123456789"> 
+                            <label for="e_mail">Email</label>
+                            <input type="email" name="e_mail" id="e_mail" placeholder="123@email.com">
 
-                        <label for="pass_word">Password</label>
-                        <input type="password" name="pass_word" id="pass_word">
-
-                        <label for="confirm_pass_word">Confirm Password</label>
-                        <input type="password" name="confirm_pass_word" id="confirm_pass_word">
-                        
-                    </form>
-                </div>    
+                            <label for="confirm_pass_word">Confirm Password</label>
+                            <input type="password" name="confirm_pass_word" id="confirm_pass_word">
+                        </form>  
+                    </div>    
+                </div>
             </div>
+    
+        <div class="bottom">
+            <button type="button">Create Account</button>
 
-            <div class="bottom">
-                <button type="button">Create Account</button>
-
-                <p>Already have an account? 
-                    <a href>Log in</a>
-                </p>
-            </div>
+            <p>Already have an account? 
+                <a href>Log in</a>
+            </p>
+        </div>
 
         </div>
+
     </div>    
 </body>
 </html>
