@@ -46,13 +46,23 @@ body{
 }
 
 .photo-creds {
+    position: absolute;
     display: flex;
     justify-content: end;
     align-items: end;
+    margin-top: 750px;
+    margin-left: 300px;
 }
 
 .background-text img {
     height: 100px;
+}
+
+a {
+    color: #CCCAC1;
+}
+a:hover {
+    cursor: pointer;
 }
 
 /* Main Content Styling */
@@ -108,6 +118,7 @@ form {
     flex-direction: column;
     height: 200px;
     justify-content: space-around;
+    
 }
 
 input {
@@ -117,10 +128,10 @@ input {
     border-width: 0.5px;
     border-radius: 5px;
     height: 25px;
-
+    
   }
 
-input:invalid {
+input: {
     border-color: red;
   }
 
@@ -130,7 +141,7 @@ input:focus {
 }
 
 /* Main Bottom Styling */
-button {
+.button {
     background-color: #596D48;
     color: whitesmoke;
     padding: 10px 40px;

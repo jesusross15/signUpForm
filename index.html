@@ -43,35 +43,35 @@
 
                 <div  class="form">
                     <div class="form-container1">
-                        <form action method="post">
+                        <form action="example-server.com" method="post">
                             <label for="first_name">First Name</label>
-                            <input type="text" name="first_name" id="first_name" placeholder="John">
+                            <input type="text" name="first_name" id="first_name" placeholder="John" required/>
 
                             <label for="phone_number">Phone Number</label>
-                            <input type="tel" name="phone_number" id="phone_number" placeholder="123456789">
+                            <input type="tel" name="phone_number" id="phone_number" placeholder="123456789" required/>
                     
                             <label for="pass_word">Password</label>
-                            <input type="password" name="pass_word" id="pass_word">
+                            <input type="password" name="pass_word" id="pass_word" required minlength="5"/>
                         </form>
                     </div>
 
                     <div class="form-container2">
-                        <form action method="post">    
+                        <form action="example-server.com" method="post">    
                             <label for="last_name">Last Name</label>
-                            <input type="text" name="last_name" id="last_name" placeholder="Smith"> 
+                            <input type="text" name="last_name" id="last_name" placeholder="Smith" required/> 
 
                             <label for="e_mail">Email</label>
-                            <input type="email" name="e_mail" id="e_mail" placeholder="123@email.com">
+                            <input type="email" name="e_mail" id="e_mail" placeholder="123@email.com" required/>
 
                             <label for="confirm_pass_word">Confirm Password</label>
-                            <input type="password" name="confirm_pass_word" id="confirm_pass_word">
+                            <input type="password" name="confirm_pass_word" id="confirm_pass_word" required/>
                         </form>  
                     </div>    
                 </div>
             </div>
     
         <div class="bottom">
-            <button type="button">Create Account</button>
+            <input class="button" type="submit" value="Create Account"></input>
 
             <p>Already have an account? 
                 <a href>Log in</a>
