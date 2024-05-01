@@ -1,6 +1,6 @@
 # signUpForm
 
-This is a website dashboard following The Odin Project curriculm where I showcased my aquired skills (thus far) of CSS Grid. 
+This is a website dashboard following The Odin Project curriculm where I showcased my aquired knowledge of forms and form validation. 
 
 ### Check out the preview below! If you would like to view the live project, click the link below the image.
 
